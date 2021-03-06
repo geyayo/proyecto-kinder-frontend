@@ -6,16 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="vistas/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vistas/css/plugins/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="vistas/css/plugins/font-awesome.min.css">
+    <meta name="title" content="Kinder">
+    <meta name="description" content="Una descripción del sitio">
+    <meta name="keyword" content="palabras, claves, del, sitio"> 
 
-    <title>Hello, world!</title>
+    <title>Kinder</title>
   </head>
   <body>
-    <h1>Hola, mundo</h1>
+    
+    <?php
+        // CABEZOTE
+        include "modulos/cabezote.php";
+    ?>
 
-    <script src="vistas/js/jquery-3.6.0.min.js"></script>
-    <script src="vistas/js/popper.min.js"></script>
-    <script src="vistas/js/bootstrap.min.js"></script>
+    <script src="vistas/js/plugins/jquery-3.6.0.min.js"></script>
+    <script src="vistas/js/plugins/popper.min.js"></script>
+    <script src="vistas/js/plugins/bootstrap.min.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
