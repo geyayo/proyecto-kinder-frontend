@@ -1,38 +1,31 @@
-<!-- ========== TOP ========== -->
-<div class="container-fluid barraSuperior" id="top">
+<!-- ========== MENU ========== -->
+<header class="container-fluid navbar-dark bg-primary menu">
     <div class="container">
-        <div class="row">
-            <!-- SOCIAL -->
-            <div class="col-12 col-sm-8 col-md-9 col-lg-9 social">
-                <ul>
-                    <li>
-                        <a href="http://facebook.com/" target="_blank">
-                            <i class="fa fa-facebook redSocial facebookBlanco"></i>
-                        </a>
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+                <img src="http://localhost/proyecto-kinder/backend/vistas/img/plantilla/logo.png" alt="">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon colorIcon"></span> -->
+                <span class="navbar-toggler-icon">   
+                    <i class="fa fa-bars" style="color:#fff; font-size:28px;"></i>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio</a>
                     </li>
-                    <li>
-                        <a href="http://instagram.com/" target="_blank">
-                            <i class="fa fa-instagram redSocial instagramBlanco"></i>
-                        </a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Nosotros</a>
                     </li>
-                    <li>
-                        <a href="http://twitter.com/" target="_blank">
-                            <i class="fa fa-twitter redSocial twitterBlanco"></i>
-                        </a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Oferta educativa</a>
                     </li>
-                    <li>
-                        <a href="http://youtube.com/" target="_blank">
-                            <i class="fa fa-youtube redSocial youtubeBlanco"></i>
-                        </a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Contacto</a>
                     </li>
                 </ul>
             </div>
-            <!-- INICIAR SESION -->
-            <div class="col-12 col-sm-4 col-md-3 col-lg-3 iniciarSesion">
-                <ul>
-                    <li><a href="#modalIngreso" data-toggle="modal"><i class="fa fa-user" aria-hidden="true"></i> Ingresar</a></li>
-                </ul>
-            </div>
-        </div>
+        </nav>
     </div>
-</div>
+</header>

@@ -5,16 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <meta name="title" content="Kinder">
+    <meta name="description" content="Una descripción del sitio">
+    <meta name="keyword" content="palabras, claves, del, sitio"> 
+    <!--CSS-->
     <link rel="stylesheet" href="vistas/css/plugins/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="vistas/css/plugins/font-awesome.min.css">
-    <meta name="title" content="Kinder">
-    <meta name="description" content="Una descripción del sitio">
-    <meta name="keyword" content="palabras, claves, del, sitio"> 
-
-    <title>Kinder</title>
+    <link rel="stylesheet" href="vistas/css/plantilla.css">
+    <link rel="stylesheet" href="vistas/css/cabezote.css">
+    
   </head>
   <body>
     
