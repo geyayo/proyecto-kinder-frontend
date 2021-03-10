@@ -7,4 +7,4 @@ class ControladorPlantilla{
         //incluimos
         include "vistas/plantilla.php";
     }
-} 
+}

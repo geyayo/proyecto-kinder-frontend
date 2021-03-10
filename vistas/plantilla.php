@@ -29,11 +29,24 @@
 
         // creamos una variable array
         $rutas = array();
+        $ruta = null;
         // evaluamos se se envian variables get
         if(isset($_GET["ruta"])){
           $rutas = explode("/", $_GET["ruta"]);
-          // Definimos todo lo que viene en indice 0 es la url amigables
-          var_dump($rutas[0]);
+          
+          $item = "ruta";
+          $valor = $rutas[0];
+          $rutaCategorias = ControladorMenu::ctrMostrarMenu($item, $valor);
+
+          if(is_array($rutaCategorias) && $rutas[0] == $rutaCategorias["ruta"]){
+            $ruta = $rutas[0];
+          }
+
+          if($ruta != null){
+            include "modulos/destacado.php";
+          }else{
+            include "modulos/error404.php";
+          }
         }
     ?>
 

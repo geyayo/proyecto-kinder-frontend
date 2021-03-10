@@ -13,8 +13,10 @@
             <div class="collapse navbar-collapse" id="navbarsExample04">
                 <ul class="navbar-nav ml-auto">
                     <?php
+                        $item = null;
+                        $valor = null;
                         // Mando a llamar con un objeto información del menu de la base de datos
-                        $categorias = ControladorMenu::ctrMostrarMenu();
+                        $categorias = ControladorMenu::ctrMostrarMenu($item, $valor);
 
                         // Utilizamos un foreach para hacer un recorrido sobre el arreglo que viene de la variable $categorias
                         foreach ($categorias as $key => $value) {
