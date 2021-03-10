@@ -12,18 +12,18 @@
 
             <div class="collapse navbar-collapse" id="navbarsExample04">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Nosotros</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Oferta educativa</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
+                    <?php
+                        // Mando a llamar con un objeto información del menu de la base de datos
+                        $categorias = ControladorMenu::ctrMostrarMenu();
+
+                        // Utilizamos un foreach para hacer un recorrido sobre el arreglo que viene de la variable $categorias
+                        foreach ($categorias as $key => $value) {
+                            echo '<li class="nav-item active">
+                                    <a class="nav-link" href="'.$value["ruta"].'">'.$value["categoria"].'</a>
+                                </li>';
+                        }
+                        
+                    ?>
                 </ul>
             </div>
         </nav>
