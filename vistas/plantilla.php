@@ -22,6 +22,11 @@
     <?php
         // CABEZOTE
         include "modulos/cabezote.php";
+
+        // evaluamos se se envian variables get
+        if(isset($_GET["ruta"])){
+          echo $_GET["ruta"];
+        }
     ?>
 
     <script src="vistas/js/plugins/jquery-3.6.0.min.js"></script>
