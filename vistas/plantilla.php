@@ -24,10 +24,10 @@
   <body>
     
     <?php
-        // CABEZOTE
+        /* ========== CABEZOTE ========== */
         include "modulos/cabezote.php";
 
-        // creamos una variable array
+        /* ========== CONTENIDO DINAMICO ========== */
         $rutas = array();
         $ruta = null;
         // evaluamos se se envian variables get
@@ -36,12 +36,15 @@
           
           $item = "ruta";
           $valor = $rutas[0];
+
+          /* ========== URL AMIGABLES DE CATEGORIAS ========== */
           $rutaCategorias = ControladorMenu::ctrMostrarMenu($item, $valor);
 
           if(is_array($rutaCategorias) && $rutas[0] == $rutaCategorias["ruta"]){
             $ruta = $rutas[0];
           }
 
+          /* ========== LISTA BLANCA DE URL'S AMIGABLES ========== */
           if($ruta != null){
             include "modulos/destacado.php";
           }else{
