@@ -7,14 +7,18 @@
 
     <meta name="title" content="Kinder">
     <meta name="description" content="Una descripción del sitio">
-    <meta name="keyword" content="palabras, claves, del, sitio"> 
+    <meta name="keyword" content="palabras, claves, del, sitio">
+    <?php
+      // Mantener la ruta fija del proyecto
+      $url = Ruta::ctrRuta();
+    ?>    
     <!--CSS-->
-    <link rel="stylesheet" href="vistas/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo $url;?>vistas/css/plugins/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed" rel="stylesheet">
-    <link rel="stylesheet" href="vistas/css/plugins/font-awesome.min.css">
-    <link rel="stylesheet" href="vistas/css/plantilla.css">
-    <link rel="stylesheet" href="vistas/css/cabezote.css">
+	 <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo $url;?>vistas/css/plugins/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo $url;?>vistas/css/plantilla.css">
+    <link rel="stylesheet" href="<?php echo $url;?>vistas/css/cabezote.css">
     
   </head>
   <body>
@@ -23,15 +27,19 @@
         // CABEZOTE
         include "modulos/cabezote.php";
 
+        // creamos una variable array
+        $rutas = array();
         // evaluamos se se envian variables get
         if(isset($_GET["ruta"])){
-          echo $_GET["ruta"];
+          $rutas = explode("/", $_GET["ruta"]);
+          // Definimos todo lo que viene en indice 0 es la url amigables
+          var_dump($rutas[0]);
         }
     ?>
 
-    <script src="vistas/js/plugins/jquery-3.6.0.min.js"></script>
-    <script src="vistas/js/plugins/popper.min.js"></script>
-    <script src="vistas/js/plugins/bootstrap.min.js"></script>
+    <script src="<?php echo $url;?>vistas/js/plugins/jquery-3.6.0.min.js"></script>
+    <script src="<?php echo $url;?>vistas/js/plugins/popper.min.js"></script>
+    <script src="<?php echo $url;?>vistas/js/plugins/bootstrap.min.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
